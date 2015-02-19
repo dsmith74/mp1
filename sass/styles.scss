@@ -4,3 +4,239 @@
 @import "variables";
 @import "mixins";
 @import "base";
+
+$color-grey : #d5dcd9;
+$color-pink : #a23844;
+$color-green : #5b9664;
+$color-bluegrey : #a1aaba;
+$color-purple : #66333f;
+$color-selected-color: #34353f;
+
+.navbar{
+	background-color: $color-purple;
+	height: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	@include navbar-resize(0.5s);
+}
+
+#navbarList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li{
+		float: right;
+		margin-left: 10px;
+		margin-top: 10px;
+		margin-right: 5px;
+		height: 40px;
+		line-height: 40px;
+		padding-left: 5px;
+		padding-right: 5px;
+		a {
+			display: block;
+			color: white;
+			text-decoration: none;
+			font-family:  $font-primary;
+		}
+	}
+}
+
+.selected {
+	background-color: rgba(255, 255, 255, 0.15);
+	border: 1px;
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 5px;
+}
+
+.large_nav_bar {
+	height: 70px;
+	ul {
+		li {
+			height: 35px;
+			line-height: 35px;
+			margin-top: 18px;
+		}
+	}
+}
+
+.section {
+	height: 600px;
+}
+
+.footer {
+	height: 100px;
+	background-color: $color-purple;
+}
+
+video {
+	width: 1340px;
+}
+
+#HomeSection {
+	height: 620px;
+	background-color: $color-grey;
+	p {
+		padding-top: 140px;
+		margin: 0 auto;
+		font-size: 120px;
+		font-family: $cursive;
+		color: $color-pink;
+		width: 500px;
+	}
+	img {
+		height: 150px;
+		width: 150px;
+		margin-left: 600px;
+		padding-top: 85px;
+	}
+}
+
+#PortfolioSection {
+	background-color: $color-pink;
+	img {
+		top: 0; left: 0; bottom: 0; right: 0;
+		margin-top: 50px;
+		margin-left: 200px;
+	}
+}
+
+#AboutSection {
+	background-color: $color-green;
+	background-image: url('../images/chevron_stripe.png');
+}
+
+#myselfIcon {
+	height: 300px;
+	width: 300px;
+	margin-top: 75px;
+	margin-left: 150px;
+	border: 1px;
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 25px;
+	float: left;
+}
+
+#about_me_title {
+	font-family: $cursive;
+	float: left;
+	font-size: 90px;
+	margin-top: 100px;
+	margin-left: 200px;
+}
+
+#about_me_textbox {
+	height: 175px;
+	width: 750px;
+	float: left;
+	background-color: $color-green;
+	position: absolute;
+	background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, 
+										rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, 
+										rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, 
+										rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+	border: 1px;
+	border-color: rgba(0, 0, 0, 0);
+	border-radius: 25px;
+	margin-left: 525px;
+	margin-top: 250px;
+	p {
+		padding: 10px;
+		padding-top: 20px;
+		padding-left: 15px;
+		font-family: $font-primary;
+		line-height: 20px;
+	}
+}
+
+#ContactSection {
+	background-color: $color-bluegrey;
+	p {
+		font-family: $cursive;
+		font-size: 80px;
+		text-align: center;
+		padding-top: 110px;
+		padding-bottom: 50px;
+    }
+}
+
+#social_media {
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+#carousel {
+	height: inherit;
+}
+
+.button {
+	font-family: Courier New;
+	color: white;
+	font-size: 60px;
+	text-decoration: none;
+	margin-top: 300px;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#leftButton {
+	float: left;
+	margin-left: 20px;
+	margin-right: 50px;
+}
+
+#rightButton {
+	float: right;
+	margin-right: 20px;
+}
+
+#caption {
+	text-align: center;
+	font-family: $font-primary;
+	color: white;
+	padding-top: 10px;
+}
+
+.modal {
+	height: 500px;
+	width: 640px;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-top: 75px;
+	margin-left: 375px;
+	video {
+		height: 400px;
+		width: 600px;
+		padding-left: 20px;
+		float: left;
+	}
+	p {
+		color: white;
+		font-family: $cursive;
+		font-size: 40px;
+		float: left;
+		padding-top: 70px;
+		padding-left: 175px;
+	}
+}
+
+.modal-exit-button {
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: Trebuchet MS;
+	font-size:19px;
+	float: right;
+	margin: 5px;
+	text-decoration:none;
+	text-shadow:1px 1px 2px #2f6627;
+}

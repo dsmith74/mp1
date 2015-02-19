@@ -1,0 +1,4 @@
+@mixin navbar-resize($time) {
+  -webkit-transition: $time;
+     -moz-transition: $time;
+}

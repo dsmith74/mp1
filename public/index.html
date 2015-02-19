@@ -2,13 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>MP1 Starter</title>
+  <title>Dakota Smith</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <div class="test"> My name is Anthony.</div>
+	<div class="navbar">
+		<ul id="navbarList">
+			<li id="contactLink"><a>Contact</a></li>
+			<li id="aboutLink"><a>About</a></li>
+			<li id="portfolioLink"><a>Portfolio</a></li>
+			<li id="homeLink" class="selected"><a>Home</a></li>
+		</ul>
+	</div>
+	<div class="section" id="HomeSection">
+		<p>Welcome!</p>
+		<img class="modal_button" src="images/svg/play38.svg">
+	</div>
+	<div class="section" id="PortfolioSection">
+		<div id="carousel">
+			<div class="button" id="leftButton"> << </div>
+			<img src="https://farm4.staticflickr.com/3146/3091005457_e12be31c1c_z.jpg">
+			<span class="button" id="rightButton"> >> </span>
+			<div id="caption">All Photos by Kody S. Photography</div>
+		</div>
+	</div>
+	<div class="section" id="AboutSection">
+		<img id="myselfIcon" src="images/icon_me.jpg">
+		<p id="about_me_title">All About Me!</p>
+		<div id="about_me_textbox">
+			<p>My name is Kody and I am currently a senior studying computer science. This webpage is to display a variety of my interests and skills. These range from my personal interests, to photography, to my technical programming skills. I am interested in learning more about web programming and improving my skills. Outside of school and work, I enjoying catching up with friends, checking out local music and food festivals and anything pumpkin or apple flavored!
+			</p>
+		</div>
+	</div>
+	<div class="section" id="ContactSection">
+		<p>Find and Follow me on Social Media!</p>
+		<div id="social_media">
+			<a href="http://facebook.com/kodyb43" target="_blank">
+				<img src="images/social_media/facebook.png">
+			</a>
+			<a href="http://instagram.com/kodyb43/" target="_blank">
+				<img src="images/social_media/instagram.png">
+			</a>
+			<a href="http://twitter.com/SmithKody" target="_blank">
+				<img src="images/social_media/twitter.png">
+			</a>
+		</div>
+	</div>
+	<div class="footer">
+		<!--<video autoplay>
+			<source src="/videos/BarMovement.mp4" type="video/mp4">
+		</video>-->
+		<!--<div>Icons made by <a href="http://yanlu.de" title="Yannick">Yannick</a>, <a href="http://www.icomoon.io" title="Icomoon">Icomoon</a>, <a href="http://victorerixon.com" title="Victor Erixon">Victor Erixon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>-->
+	</div>
+	<div class="modal">
+		<div class="modal-header">
+			<div class="modal-exit-button">X</div>
+		</div>
+		<div class="modal-body">
+			<p>Modal with a Video</p>
+			<video autoplay>
+				<source src="/videos/BigCity1.mp4" type="video/mp4">
+			</video>
+		</div>
+	</div>
 
 
   <script src="lib/jquery-2.1.3.min/index.js"></script>
